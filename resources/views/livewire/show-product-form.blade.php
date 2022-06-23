@@ -40,41 +40,7 @@
                                 {{ $producto->categoria != null ? $producto->categoria->nombreCategoria : 'Sin categoria' }}
                             </div>
                         </td>
-                        @if (!$is_editing)
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    <input value="1"
-                                        class="appearance-none block border border-gray-200 rounded-lg h-10 px-4 w-20"
-                                        required="required" type="number" name="cantidad" id="cantidad-{{$producto->id}}" min="1">
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    <select min="1"
-                                        class="appearance-none block w-32 border border-gray-200 rounded-lg h-10 px-4"
-                                        required="required" name="tipo" id="tipo-{{$producto->id}}">
-                                        <option value="1">
-                                            Ingreso</option>
-                                        <option value="2">
-                                            Retiro</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="mt-0 text-center md:space-x-3 md:block flex flex-col-reverse">
-                                    <a wire:click="$emit('add',{{ $producto->id }})"
-                                        class="cursor-pointer mb-2 md:mb-0 bg-green-400 px-5 py-2 text-sm
-                                shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-green-500">Guardar
-                                    </a>
-                                </div>
-                                <form action="{{route('historial.store')}}" id="add-form-{{ $producto->id }}" method="POST">
-                                    @csrf
-                                    <input type="hidden" id="add-{{ $producto->id }}" name="cantidad" value="">
-                                    <input type="hidden" id="form-tipo-{{ $producto->id }}" name="tipo" value="">
-                                    <input type="hidden" name="id" value="{{ $producto->id }}">
-                                </form>
-                            </td>
-                        @endif
+                        
                     </tr>
                 @endforeach
             </tbody>
