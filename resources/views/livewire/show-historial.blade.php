@@ -16,7 +16,7 @@
     @endif
     <div class="mt-8 md:flex md:flex-row md:space-x-4">
         <div>
-            <span>Fecha Inicial:</span>
+            <span>Fecha Inicial</span>
             <input class="appearance-none block w-full rounded-lg h-10 px-4 border-gray-200" type="date"
                 name="fecha_inicial" id="fecha_inicial" wire:model="fechaIn">
         </div>
