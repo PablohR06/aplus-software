@@ -32,52 +32,7 @@
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
-                    @foreach ($productos as $producto)
-                        <tr class="hover:bg-gray-100">
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm font-medium text-gray-900">
-                                    {{ $producto->codigo }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    {{ $producto->nombreProducto }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-normal">
-                                <div class="text-sm text-gray-900">
-                                    {{ $producto->descripcionProducto }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    {{ $producto->stock }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    ${{ number_format($producto->precioCompra, 0, ',', '.') }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    ${{ number_format($producto->precioNeto, 0, ',', '.') }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    ${{ number_format($producto->precioIva, 0, ',', '.') }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    {{ $producto->categoria != null ? $producto->categoria->nombreCategoria : 'Sin categoria' }}
-                                </div>
-                            </td>
-
-                            
-                        </tr>
-                    @endforeach
+                    
                 </tbody>
             </table>
         </x-table>
