@@ -1,0 +1,1 @@
+<img src="{{asset('/images')}}" alt="" style="width:128px" class="border-2 border-gray-100 rounded-full">
