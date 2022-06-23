@@ -27,31 +27,7 @@
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
-                    @foreach ($users as $user)
-                        <tr class="hover:bg-gray-100">
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm font-medium text-gray-900">
-                                    {{ $user->name }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    {{ $user->email }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    {{ count($user->getRoleNames()) > 0 ? $user->getRoleNames()[0] : 'Sin asignar' }}
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">
-                                    {{ $user->estado->descripcionEstado }}
-                                </div>
-                            </td>
-                            
-                        </tr>
-                    @endforeach
+                    
                 </tbody>
             </table>
         </x-table>
