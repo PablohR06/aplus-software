@@ -80,16 +80,6 @@
             </tbody>
         </table>
     </x-table>
-    @push('js')
-        <script>
-            Livewire.on('add', id => {
-                var cantidad = document.getElementById('cantidad-' + id).value;
-                var tipo = document.getElementById('tipo-' + id).value;
-                document.getElementById('add-' + id).setAttribute("value", cantidad);
-                document.getElementById('form-tipo-' + id).setAttribute("value", tipo);
-                document.getElementById('add-form-' + id).submit();
-            });
-        </script>
-    @endpush
+    
     {{ $productos->links() }}
 </div>
