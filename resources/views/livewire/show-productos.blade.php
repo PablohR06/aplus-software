@@ -16,20 +16,7 @@
         <x-table>
             <table class="min-w-full divide-y divide-gray-200">
                 <thead>
-                    <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal font-bold">
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Codigo</th>
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Nombre</th>
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Descripción</th>
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Cantidad</th>
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Precio Compra</th>
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Precio Neto</th>
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Precio + IVA</th>
-                        <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Categoria</th>
-                        @canany(['productos.edit', 'productos.destroy'])
-                            <th scope="col" class="px-6 py-3 text-left uppercase tracking-wider">Estado</th>
-                            <th scope="col" class="px-6 py-3 text-center uppercase tracking-wider">Acciones</th>
-                        @endcanany
-                    </tr>
+                    
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
                     
