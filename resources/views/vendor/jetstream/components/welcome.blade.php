@@ -15,7 +15,7 @@
 
     </div>
 
-    <img src="{{ asset('images/') }}" alt="" class="mt-4 w-full shadow-lg rounded-2xl">
+    <img src="{{ asset('images/home.png') }}" alt="" class="mt-4 w-full shadow-lg rounded-2xl">
 </div>
 
 <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2">
